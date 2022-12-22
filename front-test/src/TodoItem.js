@@ -1,6 +1,5 @@
 import styles from "./TodoItem.module.css";
 import moment from "moment";      // 시간 모듈
-import {useState} from "react";
 
 // function TodoItem(props) {
 //    console.log("props : ", props); 이렇게 확인 가능
