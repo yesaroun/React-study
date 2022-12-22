@@ -1,4 +1,5 @@
 import {useState} from "react";
+import TodoItem from "./TodoItem";
 
 function Todo() {
 
@@ -15,7 +16,7 @@ function Todo() {
     console.log("onSubmit Click");
 
     setTodos((currentTodos) => [todo, ...currentTodos]);
-    setTodo("") // 초기화 시킨다.
+    setTodo("");  // 초기화 시킨다.
 
     console.log(todos);
   };
@@ -26,7 +27,8 @@ function Todo() {
         <button>Add todo</button>
       </form>
       {todos.map((item, index) => {
-        return <li key={index}>{item}</li>;
+        return <TodoItem index={index} item={item}></TodoItem>
+        // return <li key={index}>{item}</li>;
       })}
     </div>);
 }
