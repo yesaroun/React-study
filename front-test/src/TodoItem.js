@@ -17,10 +17,11 @@ import moment from "moment";      // 시간 모듈
 //   );
 // }
 
-function TodoItem({name, email}) {
+function TodoItem({id, userId, title}) {
   return (
     <div>
-      <li>{name} / {email}</li>
+      <h3>{id}번째 todo list입니다.</h3>
+      <li>{userId} / {title}</li>
     </div>
   );
 }
