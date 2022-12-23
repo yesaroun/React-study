@@ -1,52 +1,44 @@
-import logo from './logo.svg';
+import {Component} from "react";
+import TOC from "./components/TOC";
+import Content from "./components/Content";
+import Subject from "./components/Subject";
 import './App.css';
 
-function Header(props) {
-    return <header>
-        <h1><a href="/" onClick={(event) => {
-            event.preventDefault();
-            props.onChangeMode();
-        }}>{props.title}</a></h1>
-    </header>
-}
-
-function Nav(props) {
-    const lis = []
-    for (let i=0; i<props.topics.length; i++) {
-        let t = props.topics[i]
-        lis.push(<li key={t.id}><a href={'/read/'+t.id}>{t.title}</a></li>)
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode:'read',
+      subject:{title:'WEB', sub:'World Wide Web!'},
+      welcome:{title:'Welcome', desc:'Hello, React!!'},
+      contents: [
+        {id:1, title: 'HTMl', desc:'HTML is for information'},
+        {id:2, title: 'css', desc: 'CSS if for design'},
+        {id:3, title: 'js', desc: 'js is for interactive'},
+      ],
     }
-    return <nav>
-        <ol>
-            {lis}
-        </ol>
-    </nav>
-}
+  }
 
-function Article(props) {
-    return <article>
-        <h2>{props.title}</h2>
-        {props.body}
-    </article>
-}
-
-
-function App() {
-    const topics = [
-        {id: 1, title: 'html', body: 'html is ...'},
-        {id: 2, title: 'css', body: 'css is ...'},
-        {id: 3, title: 'js', body: 'js is ...'}
-
-    ]
+  render() {
+    console.log('App render');
+    let _title, _desc = null;
+    if(this.state.mode === 'welcome') {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === 'read') {
+      _title = this.state.contents[0].title;
+      _desc = this.state.contents[0].desc;
+    }
     return (
-        <div>
-            <Header title="REACT" onChangeMode={function () {
-                alert('Header');
-            }}></Header>
-            <Nav topics={topics} onChangeMode55+></Nav>
-            <Article title="Welcome" body="Hello, WEB"></Article>
-        </div>
+      <div className="App">
+        <Subject
+          title={this.state.subject.title}
+          sub={this.state.subject.sub}></Subject>
+        <TOC data={this.state.contents}></TOC>
+        <Content title={_title} desc={_desc}></Content>
+      </div>
     );
+  }
 }
 
 export default App;
