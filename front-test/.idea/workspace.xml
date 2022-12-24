@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2d9874-a201-4632-a429-421b289beb76" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../front-test-standard/oz-front-test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1a0da6d03a405c3aabb360d964f74d9ac35f9b68e4b0c53de4f6e7ed7f1dfbae.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/20bfaf72806feb4b19bfa61494f763e2dd7389f05f3d5c11476259cb1a0bbabd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/21e935c3eb6d62d6df1a24305714c0958f8dd0b288dbb96d9084d42efab4bdb7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/51bf153d2de7e5ec75b7e6342997baf877e07cca98d636bb68b49b0f869b5f27.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/54fee46aad4a850bd1ee12e0dcd8cf95c96413d60cff8b409f46588494054aa7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5dd5faa7acf41550d3a078334ed5620bcf982e5c80bf2d026ee2ee6de65fb377.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/638a00b1b2061cc4eb455a44faa1e56a359243437a1190b6661e64a1faa0a02d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/797ac3c281da461b239e228f75e700a341aa40a2cb49b77931f7d20c41b4bd77.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7d150ceb6ec61b2ed420d179b4bb311793e759d83dd465d3ff75f6c6019fab77.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/852f7ae7c7deca7220a9b468702ed7076f121465aaf68b34f052db0129c45e8d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/854b5d501b3db6d7f80fe981e6a1291761617d93dc899d0b5b9c6cd7631a60df.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8bbbe22f3703a75c2bf08d5447ea605f09d5587f8505d60bbdd5cf136049b8f8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/949d003761461d1fb33841db3a6fd4f72072b5ebeb64f72a82aaa7c5ab87594f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/ab6413b36836c247b9116d518ae34da3b6c17aab3232575cf0c5626658e3cdbe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b60b7e32a3f1082445f277889e0210d08d81e17631918ebe4404b32787d8a1a6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b6b8536fc4db72adba5f4d7259153734d6338bdec74c65b11192f5ba8ab01682.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c2aaa66756545cb52004ed49a15bd8c5228625b35ba218a065905826afde3cf4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c87e309fd8206da307915ffb98f0388bbdc275feb2a073492fca8adf699b8c9a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c8b0c0bf12694e50a31e434e6e75719ad67c40aa2fec8ed1a05d1abd799c077f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/cea7ae1d6cd1a25e4e8ae749839401816ecffeae984140668e8119e00655cc6f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d18a618c261b5908a1f1287691b29d666c2c8f67571f56c2e2f7769e4078ea3d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/d91b3042923b05559eca2b344cbbb2dd59bb3f735254a46e21990697605f69c6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/db629f41f085982a57cb0f6e9be218db0c72c6728ffe5a512e55d388d4e12f9e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/eb2def1cc384b09b5b215fa05ff2147f51acb940cb7ad8811559382cbc7441c4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f041eee5645356dd4470c5dcd21be6d447a5f82fc5449fe0bc227892448cd0be.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f54cbf402a4911b5f18f90994d9905d90041554bc626e974baf8fdf6087ba6ee.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoItem.js" afterDir="false" />
-    </list>
+    <list default="true" id="ff2d9874-a201-4632-a429-421b289beb76" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +62,7 @@
       <workItem from="1671681592658" duration="11100000" />
       <workItem from="1671757284585" duration="3122000" />
       <workItem from="1671760531443" duration="1246000" />
-      <workItem from="1671762785343" duration="1307000" />
+      <workItem from="1671762785343" duration="1468000" />
     </task>
     <servers />
   </component>
