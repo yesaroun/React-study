@@ -6,6 +6,7 @@ import Todo from './Todo';
 import Button from "./Button";
 import BookList from "./BookList";
 import Users from "./Users";
+import MovieList from "./components/MovieList";
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
     <div>
       {/*<Count></Count>*/}
       {/*<Effect></Effect>*/}
-      <Todo></Todo>
+      {/*<Todo></Todo>*/}
       {/*<Button text="첫 번째 버튼" work="true"/>*/}
       {/*<Button text="두 번째 버튼" work=""/>*/}
       {/*<Button text="세 번째 버튼" work=""/>*/}
       {/*<BookList></BookList>*/}
       {/*<Users></Users>*/}
+      <MovieList></MovieList>
     </div>
   );
 }
