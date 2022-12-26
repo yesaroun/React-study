@@ -6,7 +6,8 @@ import Todo from './Todo';
 import Button from "./Button";
 import BookList from "./BookList";
 import Users from "./Users";
-import MovieList from "./components/MovieList";
+import MovieList from "./components/Movies";
+import Movies from "./components/Movies";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       {/*<Button text="세 번째 버튼" work=""/>*/}
       {/*<BookList></BookList>*/}
       {/*<Users></Users>*/}
-      <MovieList></MovieList>
+      <Movies></Movies>
     </div>
   );
 }
