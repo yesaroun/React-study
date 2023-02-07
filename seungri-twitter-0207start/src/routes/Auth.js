@@ -62,14 +62,15 @@ const Auth = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
+    <div className="authContainer">
+      <form onSubmit={onSubmit} className="container">
         <input
           name="email"
           type="email"
           placeholder="Email"
           required
           value={email}
+          className="authInput"
           onChange={onChange}
         />
         <input
@@ -78,10 +79,12 @@ const Auth = () => {
           placeholder="Password"
           required
           value={password}
+          className="authInput"
           onChange={onChange}
         />
         <input
           type="submit"
+          className="authInput authSubmit"
           value={newAccount ? "Create Account" : "Sign In"}
         />
         {error}
@@ -89,9 +92,12 @@ const Auth = () => {
       <span onClick={toggleAccount}>
         {newAccount ? "Sign In" : "Create Account"}
       </span>
-      <div>
-        <button onClick={onSocialClick} name="google">
+      <div className="authBtns">
+        <button onClick={onSocialClick} name="google" className="authBtn">
           Continue with Google
+        </button>
+        <button onClick={onSocialClick} name="facebook" className="authBtn">
+          Continue with Facebook
         </button>
       </div>
     </div>
