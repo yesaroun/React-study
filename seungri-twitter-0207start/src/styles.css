@@ -123,3 +123,15 @@ form {
   border-radius: 20px;
   color: white;
 }
+
+.tweets__container {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.tweet__container {
+  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+}
