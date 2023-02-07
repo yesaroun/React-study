@@ -1,60 +1,68 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {
-    getAuth,
-    signInWithEmailAndPassword,
-    createUserWithEmailAndPassword,
-    signInWithPopup,
-    GoogleAuthProvider
-    } from 'firebase/auth';
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider
+} from 'firebase/auth';
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+  faGoogle,
+  faTwitter,
+  faFacebook
+} from "@fortawesome/free-brands-svg-icons";
+// 아이콘 라이브러리 추가
 
 const Auth = () => {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    const [newAccount, setNewAccount] = useState(true);
-    const [error, setError] = useState("")
-    
-    const onChange = (event) => {
-        const {target: {name, value}} = event
-        // const {name, value} = event.target
-        
-        if(name === "email") {
-            setEmail(value)
-        } else if(name === "password") {
-            setPassword(value)
-        }
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [newAccount, setNewAccount] = useState(true);
+  const [error, setError] = useState("")
+
+  const onChange = (event) => {
+    const {target: {name, value}} = event
+    // const {name, value} = event.target
+
+    if (name === "email") {
+      setEmail(value)
+    } else if (name === "password") {
+      setPassword(value)
+    }
+  }
+
+  const onSubmit = async (event) => {
+    event.preventDefault(); // submit()은 클릭과 동시에 새로고침됨.
+
+    const auth = getAuth();
+
+    let data;
+    if (newAccount) {
+      data = await createUserWithEmailAndPassword(auth, email, password)
+    } else {
+      data = await signInWithEmailAndPassword(auth, email, password)
+    }
+  }
+
+  const toggleAccount = () => setNewAccount((prev) => !prev)
+
+  // https://firebase.google.com/docs/auth?hl=ko
+  const onSocialClick = async (event) => {
+    const {target: {name}} = event
+    const auth = getAuth();
+
+    let provider;
+    if (name === "google") {
+      provider = new GoogleAuthProvider()
     }
 
-    const onSubmit = async (event) => {
-        event.preventDefault(); // submit()은 클릭과 동시에 새로고침됨.
-        
-        const auth = getAuth();
+    const data = await signInWithPopup(auth, provider)
+    console.log(data)
+  }
 
-        let data;
-        if(newAccount) {
-            data = await createUserWithEmailAndPassword(auth, email,password)
-        } else {
-            data = await signInWithEmailAndPassword(auth, email, password)
-        }
-    }
-
-    const toggleAccount = () => setNewAccount((prev) => !prev)
-
-    // https://firebase.google.com/docs/auth?hl=ko
-    const onSocialClick = async (event) => {
-        const {target: {name}} = event
-        const auth = getAuth();
-
-        let provider;
-        if(name==="google"){
-            provider = new GoogleAuthProvider()
-        }
-
-        const data = await signInWithPopup(auth, provider)
-        console.log(data)
-    }
-    
-    return (
-        <div>
+  return (
+    <div>
       <form onSubmit={onSubmit}>
         <input
           name="email"
@@ -87,7 +95,7 @@ const Auth = () => {
         </button>
       </div>
     </div>
-    )
+  )
 
 }
 export default Auth;

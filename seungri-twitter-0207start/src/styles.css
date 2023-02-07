@@ -1,3 +1,9 @@
 /* CSS 초기화 */
 @import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
 
+body {
+  background-color: black;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  color: white;
+}
