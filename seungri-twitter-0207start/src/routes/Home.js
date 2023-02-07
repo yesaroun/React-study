@@ -55,16 +55,23 @@ const Home = ({userObj}) => {
 
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <input
-          value={tweet}
-          onChange={onChange}
-          type="text"
-          placeholder="당신의 마음을 표현해 주세요 :)"
-        />
-        <input type="submit" value="tweet" />
-      </form>
+    <div className="container">
+      <div className="homeForm__container">
+        <form onSubmit={onSubmit} className="homeForm">
+          <input
+            value={tweet}
+            onChange={onChange}
+            type="text"
+            placeholder="당신의 마음을 표현해 주세요 :)"
+            className="homeForm__input"
+          />
+          <input
+            type="submit"
+            value="tweet"
+            className="homeForm__btn"
+          />
+        </form>
+      </div>
       <div>
         {tweets.map((tweet) => (
           <div key={tweet.id}>

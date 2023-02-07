@@ -77,3 +77,36 @@ form {
   background: white;
   cursor: pointer;
 }
+
+
+/* Home.js */
+.homeForm__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.homeForm {
+  display: flex;
+  flex-direction: column;
+  /*버튼 정렬을 위 아래로 하려고 위에 속성 추가*/
+  align-items: center;
+  width: 100%;
+}
+
+.homeForm__input {
+  flex-grow: 1;
+  width: 170px;
+  height: 40px;
+  padding: 10px;
+  color: white;
+  border: 1px solid #04aaff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 10px;
+}
