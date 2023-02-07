@@ -67,7 +67,7 @@ const Home = ({userObj}) => {
           />
           <input
             type="submit"
-            value="tweet"
+            value="&rarr;"  //화살표
             className="homeForm__btn"
           />
         </form>
