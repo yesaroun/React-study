@@ -1,6 +1,10 @@
 /* CSS 초기화 */
 @import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
 
+* {
+  box-sizing: border-box;
+}
+
 /* Common */
 body {
   background-color: black;
@@ -13,7 +17,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-height: 350px;
+  max-width: 350px;
+}
+
+/* 박스의 크기를 정하는 기준: 테두리를 기준으로 */
+input {
+  all: unset;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+form {
+  width: 100%;
 }
 
 /* Auth.js */
@@ -40,7 +55,7 @@ body {
   text-align: center;
   background: #04aaff;
   color: white;
-  margin-top: 10;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -58,7 +73,7 @@ body {
   padding: 10px 0px;
   font-size: 12px;
   text-align: center;
-  width: 150px;
+  width: 155px;
   background: white;
   cursor: pointer;
 }

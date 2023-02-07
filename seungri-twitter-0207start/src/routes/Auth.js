@@ -63,6 +63,12 @@ const Auth = () => {
 
   return (
     <div className="authContainer">
+      <FontAwesomeIcon
+        icon={faTwitter}
+        color={"#04AAFF"}
+        size="4x"
+        style={{marginBottom:"20px"}}
+      />
       <form onSubmit={onSubmit} className="container">
         <input
           name="email"
@@ -89,15 +95,23 @@ const Auth = () => {
         />
         {error}
       </form>
-      <span onClick={toggleAccount}>
+      <span onClick={toggleAccount} style={{marginBottom: "20px"}}>
         {newAccount ? "Sign In" : "Create Account"}
       </span>
       <div className="authBtns">
         <button onClick={onSocialClick} name="google" className="authBtn">
           Continue with Google
+          <FontAwesomeIcon
+            icon={faGoogle}
+            style={{marginLeft:"3px"}}
+          />
         </button>
         <button onClick={onSocialClick} name="facebook" className="authBtn">
           Continue with Facebook
+          <FontAwesomeIcon
+            icon={faFacebook}
+            style={{marginLeft:"3px"}}
+          />
         </button>
       </div>
     </div>
