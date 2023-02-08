@@ -124,14 +124,61 @@ form {
   color: white;
 }
 
-.tweets__container {
-  text-align: center;
-  width: 300px;
-  margin: auto;
+/*.tweets__container {*/
+/*  text-align: center;*/
+/*  width: 300px;*/
+/*  margin: auto;*/
+/*}*/
+
+/*.tweet__container {*/
+/*  margin: 10px;*/
+/*  border: 1px solid white;*/
+/*  padding: 10px;*/
+/*}*/
+
+/* Tweet.js */
+.tweet__Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.tweet__container {
-  margin: 10px;
-  border: 1px solid white;
-  padding: 10px;
+.tweetForm .tweetForm__btn {
+  cursor: pointer;
+}
+
+.tweetForm__input {
+
+}
+
+.tweetForm__btn {
+  cursor: pointer;
+  background: darkolivegreen;
+  border: none;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.tweetHome__btn {
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*Home.js*/
+.container {
+  margin: 0px auto;
 }

@@ -9,6 +9,7 @@ import {
     query,
     } from 'firebase/firestore';
 
+
 const Home = ({userObj}) => {
   const [tweet, setTweet] = useState("");
   const [tweets, setTweets] = useState([]);
@@ -72,9 +73,9 @@ const Home = ({userObj}) => {
           />
         </form>
       </div>
-      <div className="tweets__container">
+      <div>
         {tweets.map((tweet) => (
-          <div key={tweet.id} className="tweet__container">
+          <div key={tweet.id}>
             <Tweet
             key={tweet.id}
             nweetObj={tweet}
