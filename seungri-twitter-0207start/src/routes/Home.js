@@ -31,7 +31,7 @@ const Home = ({userObj}) => {
     setTweet(value);
   };
 
-
+  // npm install firebase@9.16.0
   // db로 부터 데이터 불러오기
   useEffect(() => {
     const q = query(
