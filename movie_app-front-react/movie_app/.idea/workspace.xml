@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f9c98f9-5978-4539-857e-67515b7a8e87" name="변경" comment="" />
+    <list default="true" id="0f9c98f9-5978-4539-857e-67515b7a8e87" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675849727736</updated>
       <workItem from="1675849729079" duration="14000" />
-      <workItem from="1675865621297" duration="4764000" />
+      <workItem from="1675865621297" duration="6336000" />
     </task>
     <servers />
   </component>
