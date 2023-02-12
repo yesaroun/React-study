@@ -3,7 +3,7 @@ import AppRouter from './Router';
 import { useState } from 'react';
 
 function App() {
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState(1);
 
   return (
     <div>
