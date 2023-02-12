@@ -1,11 +1,19 @@
 import React from 'react';
 import RandomScore from './RandomScore';
+import Adult from './Adult';
+import Child from './Child';
 
-const Result = () => {
+const Result = ({ age }) => {
+  let ageChecker = true;
+  if (age !== 0) {
+    ageChecker = false;
+  }
+
   return (
     <>
       <RandomScore />
-      <div>hi</div>
+      <div>Age</div>
+      {ageChecker ? <Adult /> : <Child />}
     </>
   );
 };
