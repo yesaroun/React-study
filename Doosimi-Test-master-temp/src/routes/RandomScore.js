@@ -8,6 +8,7 @@ const RandomScore = () => {
 
   const scoreList = [95, 91, 87];
   let result = scoreList[resultRandom - 1];
+  let calcResult = result / 100;
 
   return (
     <div>
@@ -34,10 +35,10 @@ const RandomScore = () => {
               fill="none"
               stroke="red"
               strokeWidth="20"
-              strokeDasharray={`${2 * Math.PI * 90 * 0.92} ${
-                2 * Math.PI * 90 * 0.08
+              strokeDasharray={`${2 * Math.PI * 90 * calcResult} ${
+                2 * Math.PI * 90 * (1 - calcResult)
               }`}
-              strokeDashoffset={2 * Math.PI * 90 * 0.08}
+              strokeDashoffset={2 * Math.PI * 90 * (1 - calcResult)}
             />
           </svg>
         </div>
