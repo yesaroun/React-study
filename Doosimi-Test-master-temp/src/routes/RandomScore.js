@@ -17,8 +17,13 @@ const RandomScore = () => {
       <div>result</div>
       <div>{result}</div>
       <h1>circle</h1>
-      <div style={{ marginTop: '50px', marginLeft: '50px' }}>
-        <div style={{ width: '100px', height: '100px' }}>
+      <div
+        style={{
+          marginTop: '50px',
+          marginLeft: '50px',
+        }}
+      >
+        <div style={{ width: '50px', height: '50px' }}>
           <svg viewBox="0 0 200 200">
             <circle
               cx="100"
@@ -26,7 +31,7 @@ const RandomScore = () => {
               r="90"
               fill="none"
               stroke="beige"
-              strokeWidth="20"
+              strokeWidth="23"
             />
             <AnimatedCircle
               cx="100"
@@ -34,7 +39,7 @@ const RandomScore = () => {
               r="90"
               fill="none"
               stroke="red"
-              strokeWidth="20"
+              strokeWidth="23"
               strokeDasharray={`${2 * Math.PI * 90 * calcResult} ${
                 2 * Math.PI * 90 * (1 - calcResult)
               }`}
